@@ -1,5 +1,7 @@
 package com.gohail.rider_service.dtos;
 
+import java.util.UUID;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,8 +12,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 public class RiderDTO {
-    private Long id;
-    private String name;
-    private String email;
+    
+    private UUID id;
+    private UUID userId;
+    private String fullName;
     private String phoneNumber;
 }
